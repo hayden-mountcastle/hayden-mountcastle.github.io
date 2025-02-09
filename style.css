@@ -1,6 +1,6 @@
 body {
     background-color: #f8f9fa;
-    font-family: Arial, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     padding: 20px;
 }
 
@@ -10,11 +10,13 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-top: 50px;
+    font-family: Verdana, Tahoma, sans-serif;
 }
 
 h1 {
     color: #343a40;
     margin-bottom: 20px;
+    font-family: Verdana, Tahoma, sans-serif;
 }
 
 /* Custom Carousel Styling */
@@ -28,6 +30,19 @@ h1 {
     align-items: center;
 }
 
+
+.carousel-container-about {
+    max-width: 1000; /* Adjust width */
+    max-height: 1000; /* Adjust height */
+    margin: auto; /* Centering */
+    border-radius: 25px; /* Rounded corners */
+    overflow: visible;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-in-out 
+}
+
+
 .carousel-inner img {
     border-radius: 15px; /* Ensures images match container rounding */
     object-fit: cover; /* Ensures the images fill the container */
@@ -36,8 +51,14 @@ h1 {
     align-items: center;
 }
 
+
+
 Controls Styling
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     filter: invert(1); /* Makes icons white */
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    opacity: 1;
 }
