@@ -51,14 +51,14 @@ h1 {
     align-items: center;
 }
 
-
-
-Controls Styling
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    filter: invert(1); /* Makes icons white */
+.carousel-item {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 3s ease-in-out, visibility 0s linear 1s; /* Delay visibility */
 }
 
-.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+.carousel-item.active {
     opacity: 1;
+    visibility: visible;
+    transition: opacity 3s ease-in-out, visibility 0s linear 0s; /* Show immediately */
 }
