@@ -8,20 +8,78 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <h1 style="text-align: center">Hi, I'm Hayden</h1>
-        <h3 style="text-align: center">Welcome to my temporary website!</h3>
-        <p>Thanks for coming. I will be adding more soon. </p>
-        <p>In the meantime, please check out my current <a href="cv/Hayden Mountcastle - CV.pdf" target="_blank"><strong>CV</strong></a>.</p>
-        
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Hayden Mountcastle</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">About</a>
+            <a class="nav-item nav-link" href="#">Projects</a>
+            <a class="nav-item nav-link" href="#">Education</a>
+            <a class="nav-item nav-link" href="#">Publications</a>
+          </div>
+        </div>
+      </nav>
+    <div>
+
+
+    <section>
+        <div class="container d-flex justify-content-center">
+            <div class="row align-items-center py-lg-8 py-6">
+                <div class="col-lg-8 mx-auto text-center">
+                <h1 class="text-black fs-5 fs-xl-6">Epidemiologist and public health practioner</h1>
+                <p class="text-black py-lg-3 py-2">Thank you for coming to my site. Here, I showcase some of my past work and thoughts.</p>
+                <div class="d-sm-flex align-items-center gap-3"><button class="btn btn-success text-black mb-3 w-75">Get to know me</button><button class="btn btn-outline-dark mb-3 w-75" onclick="window.open('cv/Hayden Mountcastle - CV.pdf', '_blank')">CV</button></div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-end mt-3 mt-lg-0"><img class="img-fluid" src="assets/img/hero/hero-graphics.png" alt="" /></div>
+            </div>
+        </div><!-- end of .container-->
+    </section><!-- <section> close ============================-->   
+    
+        <div class="container">
+            <p><strong>Work Email:</strong> haydenmountcastle@hsph.harvard.edu</p>
+            <p><strong>Email:</strong> haydenmountcastle@gmail.com </p>
+            <p><strong>Phone:</strong> +1 727-647-2442 </p>
+            <p><strong>Github:</strong><a href="https://github.com/hayden-mountcastle" target="_blank"> https://github.com/hayden-mountcastle</a></p>
+        </div>  
+    </div>
+    </section> 
+    <br>
+    <br>
+    <div class="carousel-container d-flex justify-content-center">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/nyuad.png" class="d-block" alt="NYU Abu Dhabi">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/columbia.png" class="d-block" alt="Columbia University">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/ucla.png" class="d-block" alt="UCLA">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/harvard.png" class="d-block" alt="Harvard University">
+                </div>
+            </div>
     </div>
 
-    <div class="container">
-        <p><strong>Work Email:</strong> haydenmountcastle@hsph.harvard.edu</p>
-        <p><strong>Email:</strong> haydenmountcastle@gmail.com </p>
-        <p><strong>Phone:</strong> +1 727-647-2442 </p>
-        <p><strong>Github:</strong><a href="https://github.com/hayden-mountcastle" target="_blank"> https://github.com/hayden-mountcastle</a></p>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Force Auto-Scroll with JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var myCarousel = new bootstrap.Carousel(document.querySelector("#carouselExampleFade"), {
+                interval: 2000, // Auto-scroll every 3 seconds
+                ride: "carousel",
+                pause: false // Ensures it doesn't stop on hover
+            });
+        });
+    </script>
 
 </body>
 </html>

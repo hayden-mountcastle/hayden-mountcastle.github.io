@@ -16,3 +16,28 @@ h1 {
     color: #343a40;
     margin-bottom: 20px;
 }
+
+/* Custom Carousel Styling */
+.carousel-container {
+    max-width: 600px; /* Adjust width */
+    max-height: 350px; /* Adjust height */
+    margin: auto; /* Centering */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-inner img {
+    border-radius: 15px; /* Ensures images match container rounding */
+    object-fit: cover; /* Ensures the images fill the container */
+    height: 100px; /* Keep consistent height */
+    justify-content: center;
+    align-items: center;
+}
+
+Controls Styling
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Makes icons white */
+}
