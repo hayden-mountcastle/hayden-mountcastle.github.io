@@ -6,9 +6,24 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>About</title>
+    <style> 
+    /* Overwrite carousel modifications for this page only */
+            .carousel-item {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 3s ease-in-out, visibility 0s linear 1s; /* Delay visibility */
+        }
+
+        .carousel-item.active {
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 3s ease-in-out, visibility 0s linear 0s; /* Show immediately */
+        }
+    </style>
 </head>
 <body>
     <body>
+        <!-- Navigation bar at the top -->
         <div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="index.html">Hayden Mountcastle</a>
@@ -30,7 +45,7 @@
         <div class="container justify-content-center">
 
             <p>
-                Hi, I'm Hayden Mountcastle—an epidemiologist and data analyst passionate about leveraging data to drive better healthcare decisions.
+                Hi, I'm Hayden Mountcastle—an epidemiologist and data analyst passionate about driving better healthcare decisions.
                 I hold a B.S. in Biology from NYU Abu Dhabi and an MPH in Epidemiology from UCLA. 
                 Currently, I'm based in Boston and work in the Koenen Lab at the Harvard T.H. Chan School of Public Health and the Broad Institute of MIT. 
                 My primary focus is with <a href="https://pubmed.ncbi.nlm.nih.gov/30782936/">NeuroGAP</a>, 
@@ -39,9 +54,9 @@
                 See 'Projects' for a closer look at some of the things I've been doing.  
             </p>
             <p>
-                Though I call St. Pete Beach, FL, home, 
+                St. Pete Beach, FL is home, but
                 I've spent most of my life outside the U.S., having lived in Riyadh, Barcelona, Singapore, and Abu Dhabi. 
-                Living in these places + work has taken me to over 60 countries and counting.
+                Living in these places plus work has taken me to over 60 countries and counting.
             </p>
             <p>
                 Outside of work, I love cooking, playing basketball, traveling, and learning new things.
@@ -61,6 +76,7 @@
         <div>
         </div>
 
+        <!-- Carousel of fading images -->
         <div class="carousel-container-about d-flex justify-content-center">
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner-about">
@@ -82,6 +98,7 @@
                 </div>
         </div>
 
+        <!-- Force carousel -->
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 var myCarousel = new bootstrap.Carousel(document.querySelector('#carouselExampleFade'), {
@@ -90,6 +107,7 @@
             });
         </script>
 
+        <!-- Needed for carousel to work -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     
