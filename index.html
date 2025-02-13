@@ -107,33 +107,28 @@
             <!-- Contact Section Form-->
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-xl-7">
-                    <form id="contactForm" action="https://formsubmit.co/haydenmountcastle@gmail.com" method="POST" >
+                    <form id="contactForm" action="https://formsubmit.co/c684accd35135493b67395372da67060" method="POST" >
                         <!-- Name input-->
                         <div class="form-floating mb-3">
                             <label for="name">Full name</label>
                             <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." required />
-                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                         </div>
                         <!-- Email address input-->
                         <div class="form-floating mb-3">
                             <label for="email">Email address</label>
                             <input class="form-control" id="email" name="email-address" type="email" placeholder="name@example.com" required />
-                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                         </div>
                         <!-- Phone number input-->
                         <div class="form-floating mb-3">
                             <label for="phone">Phone number</label>
-                            <input class="form-control" id="phone" name="phone-number" type="tel" placeholder="(123) 456-7890"/>
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            <input class="form-control" id="phone" name="phone-number" type="tel" placeholder="+1 123-456-7890"/>
                         </div>
                         <!-- Message input-->
                         <div class="form-floating mb-3">
                             <label for="message">Message</label>
                             <textarea class="form-control" id="message" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                         </div>
-
+                        <input type="hidden" name="_next" value="message_sent.html">
                         <button class="btn btn-primary" id="submitButton" type="submit">Send</button>
                     </form>
                 </div>
